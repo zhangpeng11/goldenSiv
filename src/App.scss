@@ -1,0 +1,257 @@
+@function px2Rem($px, $base-font-size: 19.2px) {
+  @if (unitless($px)) {
+    //有无单位
+    @return ($px / 19.2) * 1rem;
+  } @else if (unit($px) == em) {
+    @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+
+// html {
+//   font-size: 19.2px; /*默认以设计稿为基准*/
+// }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  font-family: 'Ubuntu';
+}
+
+.top {
+  height: px2Rem(1080px - 46px - 70px);
+  color: #fff;
+  padding: px2Rem(46px) px2Rem(70px);
+  background-image: url('./assets/bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  .icon_2 {
+    width: px2Rem(22.6px);
+    height: px2Rem(22.6px);
+    background-image: url('./assets/element2@3x.png');
+    left: px2Rem(382.7px);
+    top: px2Rem(237.7px);
+  }
+
+  .header {
+    display: flex;
+  }
+  .header .logo {
+    width: px2Rem(200px);
+    height: px2Rem(60px);
+    flex: 1;
+    background-image: url('./assets/logo1@3x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .header a {
+    font-size: px2Rem(16px);
+    color: #fff;
+    margin-left: px2Rem(41px);
+    height: px2Rem(60px);
+    line-height: px2Rem(60px);
+    font-family: Helvetica-Bold;
+  }
+
+  .banner {
+  }
+  .banner .title {
+    font-size: px2Rem(80px);
+    text-align: center;
+    margin-top: px2Rem(194px);
+    margin-bottom: px2Rem(24px);
+  }
+  .banner .sub_title {
+    opacity: 0.8;
+    font-size: px2Rem(16px);
+    text-align: center;
+    margin-bottom: px2Rem(512px);
+  }
+}
+
+.section_1,
+.section_2,
+.section_3,
+.section_4 {
+  padding: 0 px2Rem(275px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: px2Rem(852px);
+}
+
+.section_1 {
+  height: px2Rem(1080px);
+  text-align: center;
+  background-image: url('./assets/bg2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  .title {
+    font-size: px2Rem(40px);
+  }
+  .content {
+    font-size: px2Rem(20px);
+    line-height: px2Rem(32px);
+  }
+}
+
+.section_2 {
+  background-image: url('./assets/bg3.png');
+}
+.section_3 {
+  background-image: url('./assets/bg4.png');
+}
+.section_4 {
+  background-image: url('./assets/bg5.png');
+}
+.intro {
+  display: flex;
+  background-size: contain;
+  background-repeat: repeat;
+  div {
+    flex: 1;
+  }
+  .title {
+    font-size: px2Rem(40px);
+  }
+  .content {
+    font-size: px2Rem(20px);
+  }
+  .image {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.intro_1 {
+  padding-top: px2Rem(85px);
+}
+.intro_2 {
+  padding-top: px2Rem(147px);
+}
+.intro_3 {
+  padding-top: px2Rem(123px);
+}
+.intro_1 .text {
+  margin-top: px2Rem(337px - 85px);
+}
+.intro_2 .text {
+  margin-top: px2Rem(303px - 147px);
+}
+.intro_3 .text {
+  margin-top: px2Rem(313px - 123px);
+}
+.intro_1 .image {
+  width: px2Rem(620px);
+  height: px2Rem(583px);
+  background-image: url('./assets/c@3x.png');
+  background-position: right;
+}
+.intro_2 .image {
+  width: px2Rem(624px);
+  height: px2Rem(544px);
+  background-image: url('./assets/c2@3x.png');
+  background-position: left;
+}
+.intro_3 .image {
+  width: px2Rem(569px);
+  height: px2Rem(549px);
+  background-image: url('./assets/c3@3x.png');
+  background-position: right;
+}
+.intro_1 .content {
+  width: px2Rem(555px);
+}
+.intro_2 .content {
+  width: px2Rem(555px);
+}
+.intro_3 .content {
+  width: px2Rem(613px);
+}
+.intro_1 .title,
+.intro_3 .title {
+  color: #ffffff;
+}
+.intro_1 .content,
+.intro_3 .content {
+  color: #ffffff;
+}
+.intro_2 .title {
+  width: px2Rem(555px);
+  color: #000000;
+  float: right;
+}
+.intro_2 .content {
+  color: #666666;
+  float: right;
+}
+
+.footer {
+  height: px2Rem(180px);
+  background-repeat: repeat;
+  background-image: url('./assets/bg6@3x.png');
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    width: px2Rem(226px);
+    height: px2Rem(67px);
+    margin-left: px2Rem(275px);
+    background-image: url('./assets/logo3@3x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .contract {
+    margin-right: px2Rem(289px);
+    p {
+      opacity: 0.5;
+      font-size: px2Rem(18px);
+      color: #ffffff;
+    }
+    a {
+      width: px2Rem(213px);
+      height: px2Rem(40px);
+      display: block;
+      background: #ffffff;
+      border: 3px solid #000000;
+      border-radius: px2Rem(47.5px);
+      border-radius: px2Rem(47.5px);
+      font-size: px2Rem(14px);
+      color: #000000;
+      text-align: center;
+      line-height: px2Rem(40px);
+    }
+    i {
+      width: px2Rem(15px);
+      height: px2Rem(10px);
+      position: relative;
+      top: px2Rem(1px);
+      left: px2Rem(10px);
+      display: inline-block;
+      background-image: url('./assets/jiantou@3x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

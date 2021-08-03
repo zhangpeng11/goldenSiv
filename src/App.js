@@ -9,7 +9,6 @@ function App() {
       var width = docEl.getBoundingClientRect().width;
       var rem = width / 100;
       docEl.style.fontSize = rem + 'px';
-      // flexible.rem = win.rem = rem;
     }
     refreshRem();
 
@@ -18,32 +17,32 @@ function App() {
 
   return (
     <div className="App ">
-      <div class="container">
-        <div class="top">
-          <div class="header">
-            <div class="logo"></div>
+      <div className="container">
+        <div className="top">
+          <div className="header">
+            <div className="logo"></div>
             <a href="#about">ABOUT</a>
             <a href="#strategic">STRATEGIC FOCUS</a>
             <a href="#contract">CONTACT US</a>
           </div>
-          <div class="banner">
-            <h1 class="title">
+          <div className="banner">
+            <h1 className="title">
               INNOVATIVE SOCIAL <br />
               NETWORKING
             </h1>
-            <h3 class="sub_title">
+            <h3 className="sub_title">
               ONCE TWO USERS ARE "MATCHED", THEY CAN FORGE A DEEPER AND MORE INTIMATE CONNECTION IN A SHORT TIME BY
               MAKING VOICE CALLS IN THE APP.
             </h3>
+            <div className="icon icon_1"></div>
           </div>
 
-          <div class="icon icon_1"></div>
-          <div class="icon icon_2"></div>
+          {/* <div className="icon icon_2"></div> */}
         </div>
 
-        <div id="about" class="section_1">
-          <h1 class="title">STRATEGIC FOCUS</h1>
-          <p class="content">
+        <div id="about" className="section_1">
+          <h1 className="title">STRATEGIC FOCUS</h1>
+          <p className="content">
             Founded in 2020, Golden Siv Technology Limited is a software development company that builds an innovative
             social networking application for meeting strangers.
             <br />
@@ -59,33 +58,38 @@ function App() {
             Golden Siv Technology Limited is also planning to roll out features such as gaming, talent show, and
             live-streaming to offer users more channels to meet new friends.
           </p>
+          <div className="icon icon_1"></div>
+          <div className="icon icon_2"></div>
+          <div className="icon icon_3"></div>
+          <div className="icon icon_4"></div>
+          <div className="icon icon_5"></div>
         </div>
 
-        <div id="strategic" class="section_2">
-          <div class="intro intro_1">
-            <div class="text">
-              <h1 class="title">
+        <div id="strategic" className="section_2">
+          <div className="intro intro_1">
+            <div className="text">
+              <h1 className="title">
                 INSTANT <br />
                 NETWORKING
               </h1>
-              <p class="content">
+              <p className="content">
                 GoldenSiv's unique anonymous-chat-based matching algorithm allows users to find and network with a new
                 friend within only ten seconds, which is a first in the industry.
               </p>
             </div>
-            <div class="image"></div>
+            <div className="image"></div>
           </div>
         </div>
-        <div class="section_3">
-          <div class="intro intro_2">
-            <div class="image"></div>
-            <div class="text">
-              <h1 class="title">
+        <div className="section_3">
+          <div className="intro intro_2">
+            <div className="image"></div>
+            <div className="text">
+              <h1 className="title">
                 INSTANT <br />
                 MULTI-USER <br />
                 INTERACTION
               </h1>
-              <p class="content">
+              <p className="content">
                 GoldenSiv's multi-user live audio streaming feature not only effectively cashes out its traffic but also
                 delivers "democratic" social networking by offering average-looking users a stage to show themselves and
                 fulfil their value.
@@ -93,28 +97,28 @@ function App() {
             </div>
           </div>
         </div>
-        <div class="section_4">
-          <div class="intro intro_3">
-            <div class="text">
-              <h1 class="title">
+        <div className="section_4">
+          <div className="intro intro_3">
+            <div className="text">
+              <h1 className="title">
                 DIVERSE <br />
                 INTERACTION
               </h1>
-              <p class="content">
+              <p className="content">
                 Interactive live audio streaming frees users from the tension of staring at mobile screens. By allowing
                 streamers to customize their channel backgrounds, the app welcomes all forms of interaction such as
                 knowledge sharing, talent show, service purchase, gaming, entertainment, and chatting to boost user
                 stickiness.
               </p>
             </div>
-            <div class="image"></div>
+            <div className="image"></div>
           </div>
         </div>
       </div>
 
-      <div id="contract" class="footer">
-        <div class="logo"></div>
-        <div class="contract">
+      <div id="contract" className="footer">
+        <div className="logo"></div>
+        <div className="contract">
           <p>Wanchai, Hong Kong</p>
           <a href="#">
             GoldenSiv@app.com <i></i>
